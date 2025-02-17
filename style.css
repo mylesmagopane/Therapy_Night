@@ -17,8 +17,9 @@
     line-height: 1.5; 
   }
   .logo-text{
-    color: black;   
-    font-size: 5vh;
+    color:#373737; 
+    font-size: 4vh;
+    z-index: 9999;
   }
 
 
@@ -272,6 +273,7 @@ nav .fa-bars{
           max-width: 200px;
             
         }
+      
         .home-text h1 span{
             color:#ff8c00;
             font-size: 30px;
