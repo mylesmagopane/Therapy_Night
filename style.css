@@ -20,9 +20,7 @@
     color: black;   
     font-size: 5vh;
   }
-  #navbar{
 
-  }
 
   #home{
     width: 100%;
@@ -46,7 +44,7 @@
         background: linear-gradient(rgba(255, 255, 255, 0.9),#ffffff);
         right: 0;
         left: 0;  
-        z-index: 3;     
+        z-index: 99;     
     }
 
 
@@ -218,7 +216,7 @@ nav .fa-bars{
         /* height: 40%; */
         padding-top: 120px;
         background: linear-gradient(rgba(247, 233, 222, 0.8),#fff4f4);
-        z-index: 2;
+        z-index: 1;
         transition: 0.9s;
         border-radius: 60px 0px 10px 2px;
         text-align: right;
@@ -259,19 +257,19 @@ nav .fa-bars{
             background: #000000;   
         }
 
-        .home-main-text{
+     .home-main-text{
     
-            font-size: 16px;
+            font-size: 30px;
             font-weight: 100;
             left: 0;
             top: 0;
             padding-top: 130px;
             padding-left: 0%;
-            font-size: 40px;
+           
             color:#373737;
             font-family: "italic", serif;
           font-weight: 400;
-          max-width: 250px;
+          max-width: 200px;
             
         }
         .home-text h1 span{
