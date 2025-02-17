@@ -185,31 +185,22 @@ nav .fa-bars{
 }
 
 
+
 @media only screen and (max-width:600px) {
   
-    #header{       
-        height: 80vh;
-        padding-right: 100%;       
-        background-image: url(images/image00008_4.jpg);
-        display: grid;
-        }
-        
-    .nav{
-        justify-content:center;
-    }
     nav .fa-bars {    
         display:block;
         font-size: 25px;
         padding-left: 92%;
         position: fixed; 
-        display: none;         
+        
     }
 
     nav .fa-bars:hover {
         color:#ca610a;
     }
     nav .fa-xmark{
-        position: relative;
+        position: absolute;
         /* padding-right: 200px; */
         display:unset;
         font-size: 25px;  
@@ -217,22 +208,15 @@ nav .fa-bars{
           
     }
   
-    .header-text{
-  
-        margin-top: 130px;     
-    }
-    .header-text .h1{
-        font-size: 60px;    
-    }
-
+ 
 
     nav ul{       
         display: block;
-        position: fixed;
-        top: -80px;
+        position: absolute;
+        top: -450px;
         width: 100%;
         /* height: 40%; */
-        padding-top: 130px;
+        padding-top: 120px;
         background: linear-gradient(rgba(247, 233, 222, 0.8),#fff4f4);
         z-index: 2;
         transition: 0.9s;
@@ -264,7 +248,7 @@ nav .fa-bars{
             display: block;
             font-size: 25px;
             position: absolute;
-            right: 0;
+            right: 5%;
             top: 15%;
             cursor: pointer;
             padding-top: 40px;
@@ -316,6 +300,10 @@ nav .fa-bars{
         
      
     }
+
+        
+     
+    
 
 .flash:not(.active){
    

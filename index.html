@@ -63,7 +63,7 @@
                     <li><a href="#djmixes" class="navCont" >DJ Mixes</a></li>
                     <li><a href="#company" class="navCont">Company</a></li>
                     <li><a href="#contact" class="navCont">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenue()"  ></i>
+                    <i id="crossButton" class="fa-solid fa-xmark" onclick="closemenue()"  ></i>
                 </ul>
 
                 <i id="bars" class="fa-solid fa-bars"  onclick="openmenue()"></i>
@@ -96,45 +96,7 @@
 
     <script type="text/javascript">
 
-    var elements = document.querySelectorAll(".flash");
    
-    var total = elements.length;
-
-    var counter = 1;
-
-   
-    
-
-                                        let selected = 0;
-// Run the function at an interval (e.g., every 2 seconds)
-                function autoFlash(){
-                    deleteInterval = setInterval(timer,1000);
-                    function timer(){
-                        elements.forEach((element) => {
-                                        element.classList.remove("active");
-                                        });
-                                    if(counter < elements.length){                           
-                                        
-                                        counter ++;
-                                        
-                                    }else{
-                                            counter = 0;
-                                        } 
-                                
-                                       
-                                    // elements[counter].classList.add("active"); 
-                                    
-                                    
-                                      
-                                                                                                  
-                                    }
-                            
-                                     
-                }
-
-                autoFlash();
-
-    // vat total = docu
 
     var typed = new Typed('.typed',{
     strings : ["Body","Mind","Soul"],
@@ -146,20 +108,22 @@
 
 var sidemenue = document.getElementById("sidemenue");
 
+ var crossButton = document.getElementById("crossButton");
+
         var bars = document.getElementById("bars");
 
         function openmenue(){
-            sidemenue.style.top = "-60px"
-              bars.style.display = "none" 
+            sidemenue.style.top = "-80px"
+              bars.style.display = "none"   
         }
 
         function closemenue(){
-             sidemenue.style.top = "-400px"
+             sidemenue.style.top = "-450px"
             bars.style.display = "unset"  
-            bars.style.right ="0%"        
+            //  bars.style.display = "none" 
+                      
         }
-
-   
+       
 
     </script>
 
