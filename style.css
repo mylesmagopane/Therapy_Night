@@ -45,7 +45,7 @@
         background: linear-gradient(rgba(255, 255, 255, 0.9),#ffffff);
         right: 0;
         left: 0;  
-        z-index: 99;     
+        z-index: 999;     
     }
 
 
