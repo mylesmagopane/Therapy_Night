@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Night</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Merienda:wght@300..900&family=Sevillana&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Sevillana&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Sevillana&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- google sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lobster&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Typed  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/e076f0f8b4.js" crossorigin="anonymous"></script>
+    <!-- email -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+       
+</script>
+    
+</head>
+
+<body>
+
+
+    <div id="navbar">
+        <div class="container">
+            <nav id="mainNav">
+                <!-- <h1 class="logo-text spinning">Gavi</h1> -->
+                <img class="logo-text spinning" width="80px" height="80px" src="images/Therapy_Night/Therapy logo/Therapy logo.png">
+                <ul id="sidemenue">                  
+                    <li><a href="#home" class="navCont active" >Home</a></li>
+                    <li><a href="#gallery" class="navCont" >Gallery</a></li>
+                    <li><a href="#shop" class="navCont" >Shop</a></li>                  
+                    <li><a href="#djmixes" class="navCont" >DJ Mixes</a></li>
+                    <li><a href="#company" class="navCont">Company</a></li>
+                    <li><a href="#contact" class="navCont">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenue()"  ></i>
+                </ul>
+
+                <i id="bars" class="fa-solid fa-bars"  onclick="openmenue()"></i>
+
+            </nav>
+
+           
+
+        </div>
+        
+    </div>
+
+    <div id="home" >
+        <div class="container">
+
+            <div class="home-text">
+                <h1 class="home-main-text">A complete Identity <br> for your <span class="typed"></span>  </h1> 
+                <p class="">Wear the beat, live music,<br> feel the vibe...</p>
+                <button class="button">Shop</button>
+            </div>
+
+            <div class="home-footer">
+                <p class="">Therapy  Night </p>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+    var elements = document.querySelectorAll(".flash");
+   
+    var total = elements.length;
+
+    var counter = 1;
+
+   
+    
+
+                                        let selected = 0;
+// Run the function at an interval (e.g., every 2 seconds)
+                function autoFlash(){
+                    deleteInterval = setInterval(timer,1000);
+                    function timer(){
+                        elements.forEach((element) => {
+                                        element.classList.remove("active");
+                                        });
+                                    if(counter < elements.length){                           
+                                        
+                                        counter ++;
+                                        
+                                    }else{
+                                            counter = 0;
+                                        } 
+                                
+                                       
+                                    // elements[counter].classList.add("active"); 
+                                    
+                                    
+                                      
+                                                                                                  
+                                    }
+                            
+                                     
+                }
+
+                autoFlash();
+
+    // vat total = docu
+
+    var typed = new Typed('.typed',{
+    strings : ["Body","Mind","Soul"],
+    typeSpeed: 180,
+    backSpeed : 180,
+    loop : true}   
+); 
+
+
+var sidemenue = document.getElementById("sidemenue");
+
+        var bars = document.getElementById("bars");
+
+        function openmenue(){
+            sidemenue.style.top = "-60px"
+              bars.style.display = "none" 
+        }
+
+        function closemenue(){
+             sidemenue.style.top = "-400px"
+            bars.style.display = "unset"  
+            bars.style.right ="0%"        
+        }
+
+   
+
+    </script>
+
+   
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
